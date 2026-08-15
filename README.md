@@ -131,7 +131,7 @@ As shown above, the number of images of train and valid datasets is not enough t
 <br>
 <br>
 <h3>2.2 Derivation of ImageMask Dataset</h3>
-The folder of the original <b>BreastDCEDL_spy1</b> dataset is the following.<br>
+The folder for the original <b>BreastDCEDL_spy1</b> dataset is as follows.<br>
 <pre>
 ./BreastDCEDL_spy1
   ├─spt1_dce
@@ -152,10 +152,9 @@ because they were irrelevant to train our segmentation model.<br>
 <br>
 <b>Note</b><br>
 We found that the number of slices of some NIfTI files in <b>spt1_dce</b> 
-is different from that of their corresponding mask NIfTI files in <b>spy1_mask</b>, and ignored those cases.
+was different from that of their corresponding mask NIfTI files in <b>spy1_mask</b>, and ignored those cases.
 <br><br>
 <h3>2.3 Train Sample Images and Masks</h3>
-
 <b>Train sample images</b><br>
 <img src="./projects/TensorFlowFlexUNet/BreastDCEDL/asset/train_images_sample.png" width="1024" height="auto">
 <br>
@@ -235,7 +234,7 @@ patience      = 10
 Specifed rgb color map dict for BreastDCEDL 1+2 classes.<br>
 <pre>
 [mask]
-mask_datatyoe    = "categorized"
+mask_datatype    = "categorized"
 mask_file_format = ".png"
 ;BreastDCEDL rgb color map dict for 1+1 classes.
 ;                     Cancer:dark red
